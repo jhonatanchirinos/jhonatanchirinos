@@ -5,3 +5,36 @@ body {
   margin: 0;
   padding: 0;
 }
+
+::selection {
+  background-color: #3b82f6;
+  color: #0f172a; /* slate oscuro, más elegante que negro puro */
+}
+
+p,
+span,
+h1,
+h2,
+h3 {
+  cursor: text;
+}
+
+.no-select {
+  user-select: none;
+}
+
+.cursor {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
