@@ -3,7 +3,9 @@ import { ref, onMounted } from "vue";
 import FloatingIcons from "../components/FloatingIcons.vue";
 
 import ProjectCard from "../components/ProjectCard.vue";
-import netflixPreview from "@/assets/project-previews/netflix-preview.jpg";
+import gb_preview from "@/assets/project-previews/gb_preview.png";
+import netflixPreview from "@/assets/project-previews/netflix_preview.jpg";
+import peloteada_preview from "@/assets/project-previews/peloteada_preview.png";
 
 const palabras = [
   "Clean",
@@ -16,10 +18,11 @@ const palabras = [
 
 const projects = [
   {
-    title: "Netflix UI Clone",
-    image: netflixPreview,
+    title: "GunBound",
+    image: gb_preview,
     description:
-      "Reproducción de interfaz con scroll horizontal y arquitectura por componentes.",
+      "Sitio web que aloja información de los emotes y móviles del juego GunBound.",
+    url: "https://gunbound-weld.vercel.app/emotes",
     technologies: [
       "devicon-vuejs-plain",
       "devicon-javascript-plain",
@@ -27,58 +30,15 @@ const projects = [
     ],
   },
   {
-    title: "E-commerce UI",
-    image: netflixPreview,
+    title: "Peloteada Chirinos",
+    image: peloteada_preview,
     description:
-      "Diseño de interfaz para tienda online con enfoque en experiencia de usuario.",
+      "Sitio web para organizar y gestionar partidos de fútbol de la familia Chirinos.",
+    url: "https://peloteada-chirinos.vercel.app/",
     technologies: [
       "devicon-react-original",
       "devicon-css3-plain",
       "devicon-sass-original",
-    ],
-  },
-  {
-    title: "Dashboard Admin",
-    image: netflixPreview,
-    description:
-      "Panel de administración con gráficos interactivos y diseño limpio.",
-    technologies: [
-      "devicon-angularjs-plain",
-      "devicon-typescript-plain",
-      "devicon-bootstrap-plain",
-    ],
-  },
-  {
-    title: "Portfolio Personal",
-    image: netflixPreview,
-    description:
-      "Sitio web personal para mostrar proyectos y habilidades de frontend.",
-    technologies: [
-      "devicon-vuejs-plain",
-      "devicon-tailwindcss-plain",
-      "devicon-firebase-plain",
-    ],
-  },
-  {
-    title: "Blog Tech",
-    image: netflixPreview,
-    description:
-      "Plataforma de blogging con diseño moderno y enfoque en contenido técnico.",
-    technologies: [
-      "devicon-nextjs-original",
-      "devicon-styledcomponents-plain",
-      "devicon-nodejs-plain",
-    ],
-  },
-  {
-    title: "App Clima",
-    image: netflixPreview,
-    description:
-      "Aplicación de clima con diseño limpio y datos en tiempo real.",
-    technologies: [
-      "devicon-react-original",
-      "devicon-css3-plain",
-      "devicon-openweathermap-plain",
     ],
   },
 ];
@@ -141,7 +101,7 @@ onMounted(() => {
         <div class="flex flex-col items-start gap-6 text-2xl">
           <!-- GitHub -->
           <a
-            href="https://github.com/TU_USUARIO"
+            href="https://github.com/jhonatanchirinos"
             target="_blank"
             class="text-slate-500 hover:text-blue-500 hover:scale-120 hover:-translate-y-1 transition-all duration-300"
           >
@@ -173,7 +133,7 @@ onMounted(() => {
 
           <!-- LinkedIn -->
           <a
-            href="https://linkedin.com/in/TU_USUARIO"
+            href="https://www.linkedin.com/in/jhonatan-chirinos/"
             target="_blank"
             class="text-slate-500 hover:text-blue-500 hover:scale-120 hover:-translate-y-1 transition-all duration-300"
           >
@@ -197,7 +157,7 @@ onMounted(() => {
 
           <!-- Correo / X -->
           <a
-            href="mailto:tuemail@gmail.com"
+            href="mailto:jhonnych97@gmail.com"
             class="text-[#64748b] hover:text-blue-500 hover:scale-120 hover:-translate-y-1 transition-all duration-300"
           >
             <svg
@@ -273,7 +233,7 @@ onMounted(() => {
       </section>
 
       <!-- ================= PROYECTOS ================= -->
-      <section class="min-h-screen px-6">
+      <section class="min-h-screen px-6 pb-20">
         <h2
           id="proyectos"
           class="text-6xl text-white text-center mb-20 scroll-mt-20"

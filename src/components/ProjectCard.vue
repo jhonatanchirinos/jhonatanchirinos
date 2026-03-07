@@ -6,6 +6,7 @@ const props = defineProps({
   description: String,
   technologies: Array,
   image: String,
+  url: String,
 });
 
 const slug = computed(
@@ -15,10 +16,10 @@ const slug = computed(
 
 <template>
   <div
-    class="group relative flex items-center gap-8 cursor-pointer px-8 py-5 min-h-[36vh] bg-white/2 border-2 border-white/20 transition-all duration-500 hover:bg-blue-500/5 hover:border-blue-500 rounded-sm"
+    class="group relative flex items-center gap-8 cursor-pointer px-8 py-5 bg-white/10 border-2 border-white/20 transition-all duration-500 hover:bg-blue-500/5 hover:border-blue-500 rounded-sm w-full max-w-5xl mx-auto"
   >
     <!-- INFO — izquierda -->
-    <div class="max-w-130 flex flex-col justify-between h-full py-1 min-h-45">
+    <div class="flex flex-col justify-between h-full py-1 min-h-45">
       <!-- Header -->
       <div class="flex items-center mb-6">
         <span
@@ -68,39 +69,37 @@ const slug = computed(
     ></div>
 
     <!-- IMAGEN -->
-    <div
-      class="relative overflow-hidden shrink-0 w-[50%] mx-auto aspect-video rounded-sm"
+    <a
+      :href="url"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="block group"
     >
-      <img
-        :src="image"
-        :alt="title + ' preview'"
-        class="w-full h-full object-cover brightness-[0.38] saturate-[0.07] group-hover:brightness-100 group-hover:saturate-100 transition-all duration-900 group-hover:scale-[1.08]"
-      />
-
-      <!-- Overlay azul -->
       <div
-        class="absolute inset-0 opacity-0 bg-blue-500/5 mix-blend-color group-hover:opacity-100 transition-opacity duration-900"
-      ></div>
+        class="relative overflow-hidden aspect-video w-xl rounded-sm shrink-0"
+      >
+        <img
+          :src="image"
+          :alt="title + ' preview'"
+          class="w-full h-full object-cover brightness-[0.38] saturate-[0.07] group-hover:brightness-100 group-hover:saturate-100 transition-all duration-900 group-hover:border-2 border-blue-500 rounded-sm"
+        />
 
-      <!-- Shimmer -->
-      <div
-        class="absolute inset-0 opacity-0 pointer-events-none bg-[linear-gradient(135deg,rgba(255,255,255,0.05)_0%,transparent_50%)] group-hover:opacity-100 transition-opacity duration-700"
-      ></div>
+        <!-- Overlay azul -->
+        <div
+          class="absolute inset-0 opacity-0 bg-blue-500/5 mix-blend-color group-hover:opacity-100 transition-opacity duration-900"
+        ></div>
 
-      <!-- Viñeta radial -->
-      <div
-        class="absolute inset-0 pointer-events-none bg-[radial-gradient(ellipse_at_center,transparent_50%,rgba(15,23,42,0.45)_100%)]"
-      ></div>
+        <!-- Shimmer -->
+        <div
+          class="absolute inset-0 opacity-0 pointer-events-none bg-[linear-gradient(135deg,rgba(255,255,255,0.05)_0%,transparent_50%)] group-hover:opacity-100 transition-opacity duration-700"
+        ></div>
 
-      <!-- Esquinas -->
-      <div
-        class="absolute top-2 left-2 w-5 h-5 border-t border-l border-blue-400/0 group-hover:border-blue-400/60 transition-all duration-400"
-      ></div>
-
-      <div
-        class="absolute bottom-2 right-2 w-5 h-5 border-b border-r border-blue-400/0 group-hover:border-blue-400/60 transition-all duration-400 delay-75"
-      ></div>
-    </div>
+        <!-- Viñeta radial -->
+        <div
+          class="absolute inset-0 pointer-events-none bg-[radial-gradient(ellipse_at_center,transparent_50%,rgba(15,23,42,0.45)_100%)]"
+        ></div>
+      </div>
+    </a>
   </div>
 </template>
 
