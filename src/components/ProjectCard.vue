@@ -7,6 +7,7 @@ const props = defineProps({
   technologies: Array,
   image: String,
   url: String,
+  index: Number,
 });
 
 const slug = computed(
@@ -25,7 +26,7 @@ const slug = computed(
         <span
           class="text-4xl tracking-widest text-white group-hover:text-blue-500 transition-all duration-300"
         >
-          {{ String(index ?? 1).padStart(2, "0") }}
+          {{ String(index + 1).padStart(2, "0") }}
         </span>
       </div>
 

@@ -92,7 +92,7 @@ onMounted(() => {
     <div>
       <!-- ================= NAVBAR IZQUIERDO ================= -->
       <aside
-        class="fixed left-0 top-0 h-screen w-60 flex flex-col justify-between px-8 py-10 border-slate-800 z-1"
+        class="fixed left-0 top-0 h-screen w-60 flex flex-col justify-between px-8 py-10 border-slate-800 z-20"
       >
         <!-- Espacio superior vacío -->
         <div></div>
@@ -244,16 +244,17 @@ onMounted(() => {
         <!-- COMPONENTE PROYECTO -->
         <div class="max-w-6xl mx-auto grid md:grid-cols-1 gap-5">
           <ProjectCard
-            v-for="project in projects"
+            v-for="(project, index) in projects"
             :key="project.title"
             v-bind="project"
+            :index="index"
           />
         </div>
       </section>
 
       <!-- ================= NAVBAR DERECHO ================= -->
       <aside
-        class="fixed right-0 top-0 h-screen w-60 flex flex-col justify-between px-8 py-10 border-slate-800"
+        class="fixed right-0 top-0 h-screen w-60 flex flex-col justify-between px-8 py-10 border-slate-800 z-20"
       >
         <!-- Logo -->
         <div>
