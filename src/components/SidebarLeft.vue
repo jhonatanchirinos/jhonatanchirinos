@@ -2,14 +2,10 @@
 
 <template>
   <aside
-    class="fixed left-0 top-0 h-screen w-60 flex flex-col justify-between px-8 py-10 border-slate-800"
+    class="fixed left-0 top-0 h-screen w-60 flex items-center justify-between px-8 py-10"
   >
-    <!-- Espacio superior vacío -->
-    <div></div>
-
-    <!-- Redes sociales centradas -->
-    <div class="flex flex-col items-start gap-6 text-2xl">
-      <!-- GitHub -->
+    <nav class="flex flex-col items-start gap-10 text-2xl lg:pl-8">
+      <!-- ================= GITHUB ================= -->
       <a
         href="https://github.com/jhonatanchirinos"
         target="_blank"
@@ -41,7 +37,7 @@
         </svg>
       </a>
 
-      <!-- LinkedIn -->
+      <!-- ================= LINKEDIN ================= -->
       <a
         href="https://www.linkedin.com/in/jhonatan-chirinos/"
         target="_blank"
@@ -65,7 +61,7 @@
         </svg>
       </a>
 
-      <!-- Correo / X -->
+      <!-- ================= CORREO ================= -->
       <a href="mailto:jhonnych97@gmail.com" class="nav-social">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -91,14 +87,8 @@
           />
         </svg>
       </a>
-    </div>
-
-    <!-- Espacio inferior vacío -->
-    <div></div>
+    </nav>
   </aside>
 </template>
 
-<style scoped>
-
-
-</style>
+<style scoped></style>
