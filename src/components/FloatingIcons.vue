@@ -110,7 +110,7 @@ onMounted(() => {
 <template>
   <div
     ref="container"
-    class="w-full h-full relative pointer-events-none overflow-visible"
+    class="w-full h-full relative pointer-events-none overflow-visible "
   >
     <div
       v-for="(icon, index) in icons"
