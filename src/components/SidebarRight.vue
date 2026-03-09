@@ -2,28 +2,34 @@
 
 <template>
   <aside
-    class="fixed right-0 top-0 h-screen w-60 flex flex-col justify-between px-8 py-10 border-slate-800"
+    class="fixed bottom-0 left-0 w-full py-6 lg:right-0 lg:left-auto lg:top-0 lg:h-screen lg:w-60 px-8 lg:py-10 border-slate-800 backdrop-blur-xl bg-slate-900/40 border-t border-white/10 lg:backdrop-blur-none lg:bg-transparent lg:border-none"
   >
-    <!-- Logo -->
-    <div>
+    <nav
+      class="relative flex items-center justify-around h-full lg:flex-col lg:items-start lg:justify-center lg:gap-5"
+    >
+      <!-- LOGO -->
       <a
         href="#landing"
-        class="text-6xl font-bold tracking-widest text-blue-500"
+        class="text-6xl font-bold tracking-widest text-blue-500 order-2 lg:order-1 lg:absolute lg:top-0"
       >
         JH.
       </a>
-    </div>
 
-    <!-- Navegación centrada verticalmente -->
-    <nav class="flex flex-col gap-6 items-start text-2xl">
-      <!-- <a href="#about" class="nav-section">Sobre mí</a> -->
-      <!-- <a href="#skills" class="nav-section">Conocimientos</a> -->
-      <a href="#proyectos" class="nav-section">Proyectos</a>
-      <a href="#contact" class="nav-section">Contáctame</a>
+      <!-- LINKS -->
+      <a
+        href="#proyectos"
+        class="nav-section text-2xl order-1 lg:order-2 text-white lg:text-slate-500"
+      >
+        Proyectos
+      </a>
+
+      <a
+        href="#contact"
+        class="nav-section text-2xl order-3 lg:order-3 text-white lg:text-slate-500"
+      >
+        Contáctame
+      </a>
     </nav>
-
-    <!-- Espacio inferior vacío -->
-    <div></div>
   </aside>
 </template>
 

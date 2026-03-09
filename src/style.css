@@ -50,5 +50,5 @@ h3 {
 
 /* NAV DER. */
 .nav-section {
-  @apply tracking-[1px] uppercase text-slate-500 transition duration-300 ease-in-out hover:text-blue-500 hover:translate-x-1;
+  @apply tracking-[1px] uppercase  transition duration-300 ease-in-out hover:text-blue-500 hover:translate-x-1;
 }
