@@ -2,9 +2,9 @@
 
 <template>
   <aside
-    class="fixed left-0 top-0 h-screen w-60 flex items-center justify-between px-8 py-10"
+    class="static lg:fixed lg:left-0 lg:top-0 h-auto lg:h-screen w-full lg:w-60 flex items-center justify-center lg:justify-between px-8 lg:py-10 pt-10 pb-40"
   >
-    <nav class="flex flex-col items-start gap-10 text-2xl lg:pl-8">
+    <nav class="flex flex-row lg:flex-col items-center gap-10 text-2xl lg:pl-7">
       <!-- ================= GITHUB ================= -->
       <a
         href="https://github.com/jhonatanchirinos"
