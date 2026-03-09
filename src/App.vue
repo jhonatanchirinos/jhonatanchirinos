@@ -5,20 +5,20 @@ import SidebarRight from "./components/SidebarRight.vue";
 </script>
 
 <template>
-  <div class="flex min-h-screen portfolio-bg">
+  <div class="flex flex-col lg:flex-row min-h-screen portfolio-bg">
     <!-- ================= NAVBAR IZQUIERDO ================= -->
-    <SidebarLeft />
+    <SidebarLeft class="order-2 lg:order-1" />
 
     <!-- ================= CONTENIDO CENTRAL ================= -->
-    <main class="flex-1 px-6">
+    <main class="flex-1 pb-10 lg:pb-10 order-1 lg:order-2">
       <!-- CONTENEDOR LIMITADO -->
-      <div class="max-w-6xl mx-auto">
+      <div class="max-w-6xl mx-auto px-6">
         <HomeView />
       </div>
     </main>
 
     <!-- ================= NAVBAR DERECHO ================= -->
-    <SidebarRight />
+    <SidebarRight class="order-3 lg:order-3" />
   </div>
 </template>
 

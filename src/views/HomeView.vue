@@ -133,7 +133,7 @@ onMounted(() => {
       </section>
 
       <!-- ================= PROYECTOS ================= -->
-      <section class="min-h-screen px-6 pb-20">
+      <section class="min-h-screen px-6 pb-10">
         <h2
           id="proyectos"
           class="text-6xl text-white text-center mb-20 scroll-mt-20"
