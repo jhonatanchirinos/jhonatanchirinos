@@ -87,71 +87,66 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="min-h-screen">
-    <!-- GRID PRINCIPAL 3 COLUMNAS -->
-    <div>
-      <!-- ================= LANDING PAGE ================= -->
-      <section
-        id="landing"
-        class="min-h-screen flex items-center justify-center relative overflow-hidden"
+  <div class="min-h-screen mt-10">
+    <!-- ================= LANDING PAGE ================= -->
+    <section
+      id="landing"
+      class="min-h-screen flex items-center justify-center relative overflow-hidden"
+    >
+      <!-- CONTENEDOR PADRE -->
+      <div class="flex items-center justify-center relative w-fit p-10">
+        <!-- ICONOS FLOTANTES -->
+        <div class="absolute inset-0 pointer-events-none">
+          <FloatingIcons />
+        </div>
+
+        <!-- CONTENIDO -->
+        <div class="relative">
+          <div class="max-w-3xl mx-auto text-center">
+            <h1 class="text-8xl md:text-9xl text-white leading-none">
+              JHONATAN
+            </h1>
+
+            <h1
+              class="text-8xl md:text-9xl text-white leading-none ml-12 md:ml-24"
+            >
+              CHIRINOS
+            </h1>
+
+            <p class="mt-10 text-xl md:text-2xl tracking-[0.3em] text-blue-500">
+              FRONTEND DEVELOPER
+            </p>
+
+            <p
+              class="mt-8 text-xl md:text-2xl text-slate-300 max-w-2xl leading-relaxed"
+            >
+              Diseño y desarrollo interfaces modernas, estructuradas y
+              visualmente sólidas enfocadas en experiencia y escalabilidad.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROYECTOS ================= -->
+    <section class="min-h-screen px-6 pb-10">
+      <h2
+        id="proyectos"
+        class="text-6xl text-white text-center mb-20 scroll-mt-20"
       >
-        <!-- CONTENEDOR PADRE -->
-        <div class="flex items-center justify-center relative w-fit p-10">
-          <!-- ICONOS FLOTANTES -->
-          <div class="absolute inset-0 pointer-events-none">
-            <FloatingIcons />
-          </div>
+        PROYECTOS
+      </h2>
 
-          <!-- CONTENIDO -->
-          <div class="relative">
-            <div class="max-w-3xl mx-auto text-left">
-              <h1 class="text-7xl md:text-9xl text-white leading-none">
-                JHONATAN
-              </h1>
-
-              <h1
-                class="text-7xl md:text-9xl text-white leading-none ml-12 md:ml-24"
-              >
-                CHIRINOS
-              </h1>
-
-              <p
-                class="mt-10 text-xl md:text-2xl tracking-[0.3em] text-blue-500"
-              >
-                FRONTEND DEVELOPER
-              </p>
-
-              <p
-                class="mt-8 text-xl md:text-2xl text-slate-300 max-w-2xl leading-relaxed"
-              >
-                Diseño y desarrollo interfaces modernas, estructuradas y
-                visualmente sólidas enfocadas en experiencia y escalabilidad.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ================= PROYECTOS ================= -->
-      <section class="min-h-screen px-6 pb-10">
-        <h2
-          id="proyectos"
-          class="text-6xl text-white text-center mb-20 scroll-mt-20"
-        >
-          PROYECTOS
-        </h2>
-
-        <!-- COMPONENTE PROYECTO -->
-        <div class="max-w-6xl mx-auto grid md:grid-cols-1 gap-5">
-          <ProjectCard
-            v-for="(project, index) in projects"
-            :key="project.title"
-            v-bind="project"
-            :index="index"
-          />
-        </div>
-      </section>
-    </div>
+      <!-- COMPONENTE PROYECTO -->
+      <div class="max-w-6xl mx-auto grid md:grid-cols-1 gap-5">
+        <ProjectCard
+          v-for="(project, index) in projects"
+          :key="project.title"
+          v-bind="project"
+          :index="index"
+        />
+      </div>
+    </section>
   </div>
 </template>
 

@@ -7,18 +7,17 @@ import SidebarRight from "./components/SidebarRight.vue";
 <template>
   <div class="flex flex-col lg:flex-row min-h-screen portfolio-bg">
     <!-- ================= NAVBAR IZQUIERDO ================= -->
-    <SidebarLeft class="order-2 lg:order-1" />
+    <SidebarLeft class="order-2 lg:order-1 lg:w-24 flex-shrink-0" />
 
     <!-- ================= CONTENIDO CENTRAL ================= -->
-    <main class="flex-1 pb-10 lg:pb-10 order-1 lg:order-2">
-      <!-- CONTENEDOR LIMITADO -->
-      <div class="max-w-6xl mx-auto px-6">
+    <main class="flex-1 order-1 lg:order-2 pb-16 lg:pb-10">
+      <div class="max-w-6xl mx-auto px-6 sm:px-8">
         <HomeView />
       </div>
     </main>
 
     <!-- ================= NAVBAR DERECHO ================= -->
-    <SidebarRight class="order-3 lg:order-3" />
+    <SidebarRight class="order-3 lg:w-24 flex-shrink-0" />
   </div>
 </template>
 
