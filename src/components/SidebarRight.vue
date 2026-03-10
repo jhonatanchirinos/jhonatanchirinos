@@ -5,7 +5,7 @@
     class="fixed bottom-0 left-0 w-full py-6 lg:right-0 lg:left-auto lg:top-0 lg:h-screen lg:w-60 px-8 lg:py-10 border-slate-800 backdrop-blur-xl bg-slate-900/40 border-t border-white/10 lg:backdrop-blur-none lg:bg-transparent lg:border-none lg:flex lg:items-center lg:justify-center"
   >
     <nav
-      class="relative flex items-center justify-around h-full lg:flex-col lg:items-start lg:justify-center lg:gap-5"
+      class="relative flex items-center justify-around h-full lg:flex-col lg:items-start lg:justify-center gap-7 lg:gap-5"
     >
       <!-- LOGO -->
       <a
