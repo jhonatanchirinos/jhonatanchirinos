@@ -26,7 +26,7 @@ const slug = computed(
       <!-- Número -->
       <div class="flex items-center mb-6">
         <span
-          class="text-xl text-blue-500 2xl:text-white sm:text-3xl 2xl:text-4xl tracking-widest group-hover:text-blue-500 transition-all duration-300"
+          class="text-xl text-blue-500 2xl:text-white sm:text-3xl 2xl:text-2xl tracking-widest group-hover:text-blue-500 transition-all duration-300"
         >
           {{ String(index + 1).padStart(2, "0") }}
         </span>
@@ -36,7 +36,7 @@ const slug = computed(
       <div class="flex-1">
         <div class="inline-block">
           <h3
-            class="leading-none text-2xl sm:text-3xl md:text-4xl 2xl:text-[54px] tracking-[0.03em] text-white transition-colors duration-400"
+            class="leading-none text-2xl sm:text-3xl md:text-4xl 2xl:text-5xl tracking-[0.03em] text-white transition-colors duration-400 uppercase"
           >
             {{ title }}
           </h3>
@@ -47,7 +47,7 @@ const slug = computed(
         </div>
 
         <p
-          class="text-slate-300 text-base sm:text-lg 2xl:text-xl leading-relaxed max-w-md 2xl:max-w-xs transition-colors duration-400"
+          class="text-slate-300 text-base sm:text-lg 2xl:text-lg leading-relaxed max-w-md 2xl:max-w-xs transition-colors duration-400"
         >
           {{ description }}
         </p>
