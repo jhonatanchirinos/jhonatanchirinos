@@ -17,7 +17,7 @@ const slug = computed(
 
 <template>
   <div
-    class="group relative flex flex-col 2xl:flex-row items-center gap-6 2xl:gap-8 cursor-pointer px-5 sm:px-6 2xl:px-8 py-5 border-2 transition-all duration-500 bg-blue-500/5 border-blue-500 rounded-sm w-full max-w-5xl mx-auto hover:-translate-y-1"
+    class="group relative flex flex-col 2xl:flex-row items-center gap-6 2xl:gap-8 cursor-pointer px-5 sm:px-6 2xl:px-8 py-5 border-2 transition-all duration-500 bg-blue-500/5 border-blue-500 rounded-sm w-full max-w-5xl mx-auto hover:-translate-y-1 backdrop-blur-md"
   >
     <!-- INFO  -->
     <div
