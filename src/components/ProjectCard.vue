@@ -17,7 +17,7 @@ const slug = computed(
 
 <template>
   <div
-    class="group relative flex flex-col 2xl:flex-row items-center gap-6 2xl:gap-8 cursor-pointer px-5 sm:px-6 2xl:px-8 py-5 border-2 transition-all duration-500 bg-blue-500/5 border-blue-500 rounded-sm w-full max-w-5xl mx-auto hover:-translate-y-1 backdrop-blur-md"
+    class="group relative flex flex-col 2xl:flex-row items-center gap-6 2xl:gap-8 cursor-pointer px-5 sm:px-6 2xl:px-8 py-5 border-2 transition-all duration-500 bg-blue-500/5 border-blue-500 rounded-sm w-full max-w-5xl mx-auto 2xl:hover:-translate-y-1 backdrop-blur-md"
   >
     <!-- INFO  -->
     <div
@@ -36,7 +36,7 @@ const slug = computed(
       <div class="flex-1">
         <div class="inline-block">
           <h3
-            class="leading-none text-3xl sm:text-4xl 2xl:text-[54px] tracking-[0.03em] text-white transition-colors duration-400"
+            class="leading-none text-2xl sm:text-3xl md:text-4xl 2xl:text-[54px] tracking-[0.03em] text-white transition-colors duration-400"
           >
             {{ title }}
           </h3>
@@ -47,7 +47,7 @@ const slug = computed(
         </div>
 
         <p
-          class="text-slate-300 text-base sm:text-lg 2xl:text-xl leading-relaxed 2xl:max-w-xs transition-colors duration-400"
+          class="text-slate-300 text-base sm:text-lg 2xl:text-xl leading-relaxed max-w-md 2xl:max-w-xs transition-colors duration-400"
         >
           {{ description }}
         </p>
@@ -61,7 +61,7 @@ const slug = computed(
           <i
             :class="[
               tech,
-              'text-slate-300 hover:text-blue-500 transition duration-300 text-3xl',
+              'text-slate-300 hover:text-blue-500 transition duration-300 text-2xl sm:text-3xl',
             ]"
           ></i>
         </div>
@@ -81,7 +81,7 @@ const slug = computed(
       class="block group"
     >
       <div
-        class="relative overflow-hidden aspect-video w-full 2xl:max-w-xl rounded-sm shrink-0"
+        class="relative overflow-hidden aspect-video w-full max-w-lg 2xl:max-w-xl rounded-sm shrink-0"
       >
         <img
           :src="image"
