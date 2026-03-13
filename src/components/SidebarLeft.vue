@@ -2,9 +2,11 @@
 
 <template>
   <aside
-    class="static 2xl:fixed 2xl:left-0 2xl:top-0 h-auto 2xl:h-screen w-full 2xl:w-60 flex items-center justify-center 2xl:justify-between px-8 2xl:py-10 pt-10 pb-40"
+    class="static 2xl:fixed 2xl:left-0 2xl:top-0 h-auto 2xl:h-screen w-full 2xl:w-60 flex items-center justify-center 2xl:justify-between px-4 sm:px-6 2xl:px-8 pt-8 pb-40 2xl:py-10"
   >
-    <nav class="flex flex-row 2xl:flex-col items-center gap-10 text-2xl 2xl:pl-7">
+    <nav
+      class="flex flex-row 2xl:flex-col items-center gap-10 text-2xl 2xl:pl-7"
+    >
       <!-- ================= GITHUB ================= -->
       <a
         href="https://github.com/jhonatanchirinos"
@@ -13,7 +15,7 @@
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="w-7 h-7"
+          class="w-6 h-6 sm:w-7 sm:h-7"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"

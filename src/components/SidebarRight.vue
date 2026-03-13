@@ -10,7 +10,7 @@
       <!-- LOGO -->
       <a
         href="#landing"
-        class="text-6xl font-bold tracking-widest text-blue-500 order-2 2xl:order-1 2xl:absolute 2xl:top-0 2xl:left-1/2 2xl:-translate-x-1/2"
+        class="text-4xl sm:text-5xl 2xl:text-7xl font-bold tracking-widest text-blue-500 order-2 2xl:order-1 2xl:absolute 2xl:top-0 2xl:left-1/2 2xl:-translate-x-1/2"
       >
         JH.
       </a>
@@ -18,14 +18,14 @@
       <!-- LINKS -->
       <a
         href="#proyectos"
-        class="nav-section text-2xl order-1 2xl:order-2 text-white 2xl:text-slate-500"
+        class="nav-section text-lg sm:text-xl 2xl:text-2xl order-1 2xl:order-2 text-white 2xl:text-slate-500"
       >
         Proyectos
       </a>
 
       <a
         href="#contact"
-        class="nav-section text-2xl order-3 2xl:order-3 text-white 2xl:text-slate-500"
+        class="nav-section text-lg sm:text-xl 2xl:text-2xl order-3 2xl:order-3 text-white 2xl:text-slate-500"
       >
         Contáctame
       </a>
