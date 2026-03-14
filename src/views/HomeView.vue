@@ -104,15 +104,15 @@ onMounted(() => {
 
         <!-- CONTENIDO -->
         <div class="relative">
-          <div class="max-w-3xl mx-auto text-center">
+          <div class="max-w-4xl mx-auto text-center">
             <h1
-              class="text-5xl sm:text-6xl md:text-8xl 2xl:text-9xl text-white leading-none"
+              class="text-5xl sm:text-6xl md:text-7xl 2xl:text-8xl text-white leading-none"
             >
               JHONATAN
             </h1>
 
             <h1
-              class="text-5xl sm:text-6xl md:text-8xl 2xl:text-9xl text-white leading-none ml-6 sm:ml-10 md:ml-24"
+              class="text-5xl sm:text-6xl md:text-7xl 2xl:text-8xl text-white leading-none ml-6 sm:ml-10 md:ml-24"
             >
               CHIRINOS
             </h1>

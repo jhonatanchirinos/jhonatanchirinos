@@ -36,7 +36,7 @@ const slug = computed(
       <div class="flex-1">
         <div class="inline-block">
           <h3
-            class="leading-none text-2xl sm:text-3xl md:text-4xl 2xl:text-5xl tracking-[0.03em] text-white transition-colors duration-400 uppercase"
+            class="leading-none text-2xl sm:text-3xl md:text-4xl 2xl:text-5xl tracking-[0.03em] text-white transition-colors duration-400 uppercase w-min"
           >
             {{ title }}
           </h3>

@@ -24,10 +24,6 @@ import SidebarRight from "./components/SidebarRight.vue";
 <style>
 /* Fondo cuadriculado */
 .portfolio-bg {
-  background-color: #0a101d;
-  background-image:
-    linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
-  background-size: 40px 40px;
+  
 }
 </style>
