@@ -87,7 +87,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="min-h-screen mt-10">
+  <div class="min-h-screen">
     <!-- ================= LANDING PAGE ================= -->
     <section
       id="landing"
