@@ -4,8 +4,8 @@ import FloatingIcons from "../components/FloatingIcons.vue";
 
 import ProjectCard from "../components/ProjectCard.vue";
 import gb_preview from "@/assets/project-previews/gb_preview.png";
-import netflixPreview from "@/assets/project-previews/netflix_preview.jpg";
 import peloteada_preview from "@/assets/project-previews/peloteada_preview.png";
+import pokeapp_preview from "@/assets/project-previews/pokeapp_preview.png";
 
 const palabras = [
   "Clean",
@@ -33,12 +33,24 @@ const projects = [
     title: "Peloteada Chirinos",
     image: peloteada_preview,
     description:
-      "Proyecto web para crear alineaciones de fútbol 6 vs 6 utilizado para organizar partidos.",
+      "Proyecto web para crear alineaciones de fútbol 6 vs 6 y organizar partidos.",
     url: "https://peloteada-chirinos.vercel.app/",
     technologies: [
+      "devicon-vuejs-plain",
+      "devicon-javascript-plain",
+      "devicon-tailwindcss-plain",
+    ],
+  },
+  {
+    title: "Buscador Pokémon",
+    image: pokeapp_preview,
+    description:
+      "Proyecto web para buscar Pokémon por nombre y por tipos utilizando PokéAPI.",
+    url: "https://pokeapp-alpha-one.vercel.app/",
+    technologies: [
       "devicon-react-original",
-      "devicon-css3-plain",
-      "devicon-sass-original",
+      "devicon-javascript-plain",
+      "devicon-tailwindcss-plain",
     ],
   },
 ];
