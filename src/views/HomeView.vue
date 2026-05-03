@@ -46,7 +46,7 @@ const projects = [
     image: pokeapp_preview,
     description:
       "Proyecto web para buscar Pokémon por nombre y por tipos utilizando PokéAPI.",
-    url: "https://pokeapp-alpha-one.vercel.app/",
+    url: "https://buscadordepokemon.vercel.app/",
     technologies: [
       "devicon-react-original",
       "devicon-javascript-plain",
