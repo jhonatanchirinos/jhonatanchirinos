@@ -22,7 +22,7 @@ const projects = [
     image: gb_preview,
     description:
       "Proyecto web que aloja información de los emotes y móviles del juego GunBound.",
-    url: "https://gunbound-weld.vercel.app/emotes",
+    url: "https://gunboundgb.vercel.app/emotes",
     technologies: [
       "devicon-vuejs-plain",
       "devicon-javascript-plain",
