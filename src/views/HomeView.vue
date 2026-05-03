@@ -21,7 +21,7 @@ const projects = [
     title: "GunBound",
     image: gb_preview,
     description:
-      "Sitio web que aloja información de los emotes y móviles del juego GunBound.",
+      "Proyecto web que aloja información de los emotes y móviles del juego GunBound.",
     url: "https://gunbound-weld.vercel.app/emotes",
     technologies: [
       "devicon-vuejs-plain",
@@ -33,7 +33,7 @@ const projects = [
     title: "Peloteada Chirinos",
     image: peloteada_preview,
     description:
-      "Sitio web para organizar y gestionar partidos de fútbol de la familia Chirinos.",
+      "Proyecto web para crear alineaciones de fútbol 6 vs 6 utilizado para organizar partidos.",
     url: "https://peloteada-chirinos.vercel.app/",
     technologies: [
       "devicon-react-original",
