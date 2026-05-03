@@ -23,12 +23,12 @@
         Proyectos
       </a>
 
-      <a
+      <!-- <a
         href="#contact"
         class="nav-section text-lg sm:text-xl 2xl:text-2xl order-3 2xl:order-3 text-white 2xl:text-slate-500"
       >
         Contáctame
-      </a>
+      </a> -->
     </nav>
   </aside>
 </template>
