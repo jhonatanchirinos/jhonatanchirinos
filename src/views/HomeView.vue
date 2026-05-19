@@ -18,11 +18,11 @@ const palabras = [
 
 const projects = [
   {
-    title: "GunBound",
+    title: "GunBound Info",
     image: gb_preview,
     description:
       "Proyecto web que aloja información de los emotes y móviles del juego GunBound.",
-    url: "https://gunboundgb.vercel.app/emotes",
+    url: "https://gunbound-info.vercel.app/emotes",
     technologies: [
       "devicon-vuejs-plain",
       "devicon-javascript-plain",
