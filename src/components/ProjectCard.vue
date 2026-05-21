@@ -1,27 +1,39 @@
 <script setup lang="js">
-import { computed } from "vue";
-
 const props = defineProps({
-  title: String,
-  description: String,
-  technologies: Array,
-  image: String,
-  url: String,
-  index: Number,
+  title: {
+    type: String,
+    required: true,
+  },
+  description: {
+    type: String,
+    default: "Sin descripción",
+  },
+  technologies: {
+    type: Array,
+    default: () => [],
+  },
+  image: {
+    type: String,
+    required: true,
+  },
+  url: {
+    type: String,
+    default: "#",
+  },
+  index: {
+    type: Number,
+    required: true,
+  },
 });
-
-const slug = computed(
-  () => props.title?.toLowerCase().replace(/\s+/g, "-") ?? "project",
-);
 </script>
 
 <template>
   <div
-    class="group relative flex flex-col 2xl:flex-row items-center gap-6 2xl:gap-8 cursor-pointer px-5 sm:px-6 2xl:px-8 py-5 border-2 transition-all duration-500 bg-blue-500/5 border-blue-500 rounded-sm w-full max-w-5xl mx-auto 2xl:hover:-translate-y-1 backdrop-blur-md"
+    class="group relative flex flex-col 2xl:flex-row items-center gap-6 2xl:gap-8 px-5 sm:px-6 2xl:px-8 py-5 border-2 transition-all duration-500 bg-blue-500/5 border-blue-500 rounded-sm w-full max-w-7xl mx-auto 2xl:hover:-translate-y-1 backdrop-blur-md"
   >
     <!-- INFO  -->
     <div
-      class="flex flex-col justify-between h-full py-1 min-h-45 flex-1 text-center 2xl:text-left"
+      class="flex flex-col justify-between h-full py-1 min-h-45 flex-1 min-w-0 text-center 2xl:text-left 2xl:pr-4"
     >
       <!-- Número -->
       <div class="flex items-center mb-6">
@@ -33,10 +45,10 @@ const slug = computed(
       </div>
 
       <!-- Título, subrayado, descripción -->
-      <div class="flex-1">
-        <div class="inline-block">
+      <div class="flex-1 min-w-0">
+        <div class="inline-block max-w-full">
           <h3
-            class="leading-none text-2xl sm:text-3xl md:text-4xl 2xl:text-5xl tracking-[0.03em] text-white transition-colors duration-400 uppercase w-min"
+            class="leading-none text-2xl sm:text-3xl md:text-4xl 2xl:text-5xl tracking-[0.03em] text-white transition-colors duration-400 uppercase"
           >
             {{ title }}
           </h3>
@@ -78,10 +90,10 @@ const slug = computed(
       :href="url"
       target="_blank"
       rel="noopener noreferrer"
-      class="block group"
+      class="block shrink-0"
     >
       <div
-        class="relative overflow-hidden aspect-video w-full max-w-lg 2xl:max-w-xl rounded-sm shrink-0"
+        class="relative overflow-hidden aspect-video w-full max-w-lg 2xl:max-w-xl rounded-sm"
       >
         <img
           :src="image"
