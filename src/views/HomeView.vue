@@ -32,8 +32,7 @@ const projects = [
   {
     title: "Peloteada Chirinos",
     image: peloteada_preview,
-    description:
-      "Proyecto web para crear alineaciones de fútbol 6vs6.",
+    description: "Proyecto web para crear alineaciones de fútbol 6vs6.",
     url: "https://peloteada-chirinos.vercel.app/",
     technologies: [
       "devicon-vuejs-plain",
@@ -156,7 +155,7 @@ onMounted(() => {
       </h2>
 
       <!-- COMPONENTE PROYECTO -->
-      <div class="max-w-6xl mx-auto grid md:grid-cols-1 gap-5">
+      <div class="max-w-7xl mx-auto grid md:grid-cols-1 gap-5">
         <ProjectCard
           v-for="(project, index) in projects"
           :key="project.title"
