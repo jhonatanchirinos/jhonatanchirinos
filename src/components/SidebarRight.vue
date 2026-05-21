@@ -1,4 +1,6 @@
-<script setup lang="js"></script>
+<script setup>
+import { navLinks } from "../data/navigation";
+</script>
 
 <template>
   <aside
@@ -17,18 +19,13 @@
 
       <!-- LINKS -->
       <a
-        href="#proyectos"
+        v-for="link in navLinks"
+        :key="link.name"
+        :href="link.href"
         class="nav-section text-lg sm:text-xl 2xl:text-2xl order-1 2xl:order-2 text-white 2xl:text-slate-500"
       >
-        Proyectos
+        {{ link.name }}
       </a>
-
-      <!-- <a
-        href="#contact"
-        class="nav-section text-lg sm:text-xl 2xl:text-2xl order-3 2xl:order-3 text-white 2xl:text-slate-500"
-      >
-        Contáctame
-      </a> -->
     </nav>
   </aside>
 </template>
