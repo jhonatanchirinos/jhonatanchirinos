@@ -92,6 +92,8 @@ const props = defineProps({
         <img
           :src="image"
           :alt="title + ' preview'"
+          loading="lazy"
+          decoding="async"
           class="w-full h-full object-cover transition-all duration-500 rounded-sm border-2 border-blue-500 2xl:border-slate-500 2xl:brightness-[0.38] 2xl:saturate-[0.07] 2xl:group-hover:border-blue-500 2xl:group-hover:brightness-100 2xl:group-hover:saturate-100"
         />
       </div>
