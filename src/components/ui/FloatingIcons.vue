@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from "vue";
-import { icons } from "../data/icons";
-import { useFloatingAnimation } from "../composables/useFloatingAnimation";
+import { icons } from "../../data/icons";
+import { useFloatingAnimation } from "../../composables/useFloatingAnimation";
 
 const container = ref(null);
 const { positions } = useFloatingAnimation(container, icons);

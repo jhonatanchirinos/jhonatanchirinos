@@ -1,8 +1,8 @@
 <script setup>
 import { socialLinks } from "../data/socials";
-import IconGithub from "./icons/IconGithub.vue";
-import IconLinkedin from "./icons/IconLinkedin.vue";
-import IconMail from "./icons/IconMail.vue";
+import IconGithub from "../components/icons/IconGithub.vue";
+import IconLinkedin from "../components/icons/IconLinkedin.vue";
+import IconMail from "../components/icons/IconMail.vue";
 </script>
 
 <template>

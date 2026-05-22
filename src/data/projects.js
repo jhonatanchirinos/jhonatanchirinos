@@ -1,6 +1,6 @@
-import gb_preview from "@/assets/project-previews/gb_preview.png";
-import peloteada_preview from "@/assets/project-previews/peloteada_preview.png";
-import pokeapp_preview from "@/assets/project-previews/pokeapp_preview.png";
+import gb_preview from "@/assets/images/projects/gb_preview.png";
+import peloteada_preview from "@/assets/images/projects/peloteada_preview.png";
+import pokeapp_preview from "@/assets/images/projects/pokeapp_preview.png";
 
 export const projects = [
   {
