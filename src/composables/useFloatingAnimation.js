@@ -56,14 +56,12 @@ export function useFloatingAnimation(containerRef, iconsList) {
           p.y > -icon_size &&
           p.y < currentRect.height;
 
-        // fade
         if (inside) {
           p.opacity = Math.min(0.35, p.opacity + 0.01);
         } else {
           p.opacity = Math.max(0, p.opacity - 0.01);
         }
 
-        // respawn
         if (
           p.x < -spawn_margin ||
           p.x > currentRect.width + spawn_margin ||

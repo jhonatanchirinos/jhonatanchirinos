@@ -9,7 +9,6 @@ import { projects } from "../data/projects";
       PROYECTOS
     </h2>
 
-    <!-- COMPONENTE PROYECTO -->
     <div class="max-w-7xl mx-auto grid md:grid-cols-1 gap-5">
       <ProjectCard
         v-for="(project, index) in projects"

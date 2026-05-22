@@ -7,14 +7,11 @@ import FloatingIcons from "./FloatingIcons.vue";
     id="landing"
     class="min-h-screen flex items-center justify-center relative overflow-hidden"
   >
-    <!-- CONTENEDOR PADRE -->
     <div class="flex items-center justify-center relative w-fit p-6 sm:p-8 md:p-10">
-      <!-- ICONOS FLOTANTES -->
       <div class="absolute inset-0 pointer-events-none">
         <FloatingIcons />
       </div>
 
-      <!-- CONTENIDO -->
       <div class="relative">
         <div class="max-w-4xl mx-auto text-center">
           <h1 class="text-5xl sm:text-6xl md:text-7xl 2xl:text-8xl text-white leading-none">

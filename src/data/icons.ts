@@ -21,4 +21,5 @@ export const icons: string[] = [
   "devicon-postman-plain colored",
   "devicon-vercel-original colored",
   "devicon-npm-original-wordmark colored",
+  "devicon-sass-original colored",
 ];

@@ -5,10 +5,7 @@ import ProjectsSection from "../components/ProjectsSection.vue";
 
 <template>
   <div class="min-h-screen">
-    <!-- ================= LANDING PAGE ================= -->
     <HeroSection />
-
-    <!-- ================= PROYECTOS ================= -->
     <ProjectsSection />
   </div>
 </template>

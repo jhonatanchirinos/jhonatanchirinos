@@ -31,11 +31,9 @@ const props = defineProps({
   <div
     class="group relative flex flex-col 2xl:flex-row items-center gap-6 2xl:gap-8 px-5 sm:px-6 2xl:px-8 py-5 border-2 transition-all duration-500 bg-blue-500/5 border-blue-500 rounded-sm w-full max-w-7xl mx-auto 2xl:hover:-translate-y-1 backdrop-blur-md"
   >
-    <!-- INFO  -->
     <div
       class="flex flex-col justify-between h-full py-1 min-h-45 flex-1 min-w-0 text-center 2xl:text-left 2xl:pr-4"
     >
-      <!-- Número -->
       <div class="flex items-center mb-6">
         <span
           class="text-xl text-blue-500 2xl:text-white sm:text-3xl 2xl:text-2xl tracking-widest group-hover:text-blue-500 transition-all duration-300"
@@ -44,7 +42,6 @@ const props = defineProps({
         </span>
       </div>
 
-      <!-- Título, subrayado, descripción -->
       <div class="flex-1 min-w-0">
         <div class="inline-block max-w-full">
           <h3
@@ -65,7 +62,6 @@ const props = defineProps({
         </p>
       </div>
 
-      <!-- Tegnologías -->
       <div
         class="flex gap-4 flex-wrap pt-4 border-white/5 group-hover:border-blue-500/10 transition-colors duration-500 justify-center"
       >
@@ -80,12 +76,10 @@ const props = defineProps({
       </div>
     </div>
 
-    <!-- DIVISOR -->
     <div
       class="hidden 2xl:block w-px self-stretch bg-blue-500 transition-colors duration-500 shrink-0"
     ></div>
 
-    <!-- IMAGEN -->
     <a
       :href="url"
       target="_blank"
