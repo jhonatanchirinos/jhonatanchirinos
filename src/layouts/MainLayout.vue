@@ -1,6 +1,6 @@
 <script setup>
-import SidebarLeft from "../components/SidebarLeft.vue";
-import SidebarRight from "../components/SidebarRight.vue";
+import SidebarLeft from "./SidebarLeft.vue";
+import SidebarRight from "./SidebarRight.vue";
 </script>
 
 <template>

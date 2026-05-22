@@ -1,4 +1,4 @@
-export const icons: string[] = [
+export const icons = [
   "devicon-javascript-plain colored",
   "devicon-typescript-plain colored",
   "devicon-html5-plain colored",

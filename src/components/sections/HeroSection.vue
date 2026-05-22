@@ -1,5 +1,5 @@
 <script setup>
-import FloatingIcons from "./FloatingIcons.vue";
+import FloatingIcons from "../ui/FloatingIcons.vue";
 </script>
 
 <template>

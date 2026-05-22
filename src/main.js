@@ -1,5 +1,5 @@
 import { createApp } from "vue";
-import "./style.css";
+import "./styles/main.css";
 import App from "./App.vue";
 import "devicon/devicon.min.css";
 
