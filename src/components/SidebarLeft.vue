@@ -12,7 +12,6 @@ import IconMail from "./icons/IconMail.vue";
     <nav
       class="flex flex-row 2xl:flex-col items-center gap-10 text-2xl 2xl:pl-7"
     >
-      <!-- ================= GITHUB ================= -->
       <a
         :href="socialLinks.github"
         target="_blank"
@@ -21,7 +20,6 @@ import IconMail from "./icons/IconMail.vue";
         <IconGithub />
       </a>
 
-      <!-- ================= LINKEDIN ================= -->
       <a
         :href="socialLinks.linkedin"
         target="_blank"
@@ -30,7 +28,6 @@ import IconMail from "./icons/IconMail.vue";
         <IconLinkedin />
       </a>
 
-      <!-- ================= CORREO ================= -->
       <a :href="socialLinks.email" class="nav-social">
         <IconMail />
       </a>
