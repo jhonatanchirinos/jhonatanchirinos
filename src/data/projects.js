@@ -1,12 +1,13 @@
 import gb_preview from "@/assets/images/projects/gb_preview.webp";
-import peloteada_preview from "@/assets/images/projects/peloteada_preview.webp";
+import sixvssix_preview from "@/assets/images/projects/sixvssix_preview.webp";
 import pokeapp_preview from "@/assets/images/projects/pokeapp_preview.webp";
 
 export const projects = [
   {
     title: "GunBound Info",
     image: gb_preview,
-    description: "Proyecto web que contiene información sobre el juego GunBound",
+    description:
+      "Proyecto web que contiene información sobre el juego GunBound",
     url: "https://gunbound-info.vercel.app/emotes",
     technologies: [
       "devicon-vuejs-plain",
@@ -15,8 +16,8 @@ export const projects = [
     ],
   },
   {
-    title: "Peloteada Chirinos",
-    image: peloteada_preview,
+    title: "6vs6",
+    image: sixvssix_preview,
     description: "Proyecto web para crear alineaciones de fútbol 6vs6.",
     url: "https://peloteada-chirinos.vercel.app/",
     technologies: [
@@ -28,7 +29,8 @@ export const projects = [
   {
     title: "Pokébuscador",
     image: pokeapp_preview,
-    description: "Proyecto web para buscar Pokémon por nombre y por tipos utilizando PokéAPI.",
+    description:
+      "Proyecto web para buscar Pokémon por nombre y por tipos utilizando PokéAPI.",
     url: "https://buscadordepokemon.vercel.app/",
     technologies: [
       "devicon-react-original",
