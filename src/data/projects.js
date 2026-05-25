@@ -7,7 +7,7 @@ export const projects = [
     title: "GunBound Info",
     image: gb_preview,
     description:
-      "Proyecto web que contiene información sobre el juego GunBound",
+      "Proyecto web con información sobre el juego GunBound.",
     url: "https://gunbound-info.vercel.app/emotes",
     technologies: [
       "devicon-vuejs-plain",

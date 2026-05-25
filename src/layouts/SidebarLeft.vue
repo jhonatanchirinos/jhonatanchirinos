@@ -7,7 +7,7 @@ import IconMail from "../components/icons/IconMail.vue";
 
 <template>
   <aside
-    class="static 2xl:fixed 2xl:left-0 2xl:top-0 h-auto 2xl:h-screen w-full 2xl:w-60 flex items-center justify-center 2xl:justify-between px-4 sm:px-6 2xl:px-8 pt-8 pb-40 2xl:py-10"
+    class="static 2xl:fixed 2xl:left-0 2xl:top-0 h-auto 2xl:h-screen w-full 2xl:w-60 flex items-center justify-center 2xl:justify-between px-4 sm:px-6 2xl:px-8 pt-8 pb-24 2xl:py-10"
   >
     <nav
       class="flex flex-row 2xl:flex-col items-center gap-10 text-2xl 2xl:pl-7"

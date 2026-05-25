@@ -43,7 +43,7 @@ defineProps({
       </div>
 
       <div class="flex-1 min-w-0">
-        <div class="inline-block max-w-full">
+        <div class="inline-block max-w-full 2xl:max-w-lg">
           <h3
             class="leading-none text-2xl sm:text-3xl md:text-4xl 2xl:text-5xl tracking-[0.03em] text-white transition-colors duration-400 uppercase"
           >
@@ -56,7 +56,7 @@ defineProps({
         </div>
 
         <p
-          class="text-slate-300 text-base sm:text-lg leading-relaxed max-w-md 2xl:max-w-xs"
+          class="text-slate-300 text-base sm:text-lg leading-relaxed sm:text-start max-w-xs mx-auto sm:max-w-none sm:mx-0"
         >
           {{ description }}
         </p>
