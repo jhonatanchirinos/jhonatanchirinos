@@ -38,6 +38,7 @@ export function useFloatingAnimation(containerRef, iconsList) {
 
   onMounted(() => {
     if (!containerRef.value) return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
     const rect = containerRef.value.getBoundingClientRect();
     positions.value = iconsList.map(() => spawn(rect));
