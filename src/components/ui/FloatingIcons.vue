@@ -26,4 +26,3 @@ const { positions } = useFloatingAnimation(container, icons);
   </div>
 </template>
 
-<style scoped></style>

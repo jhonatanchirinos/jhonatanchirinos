@@ -10,4 +10,3 @@ import ProjectsSection from "../components/sections/ProjectsSection.vue";
   </div>
 </template>
 
-<style scoped></style>

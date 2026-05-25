@@ -27,4 +27,3 @@ import IconMail from "../components/icons/IconMail.vue";
   </aside>
 </template>
 
-<style scoped></style>

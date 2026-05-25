@@ -1,5 +1,5 @@
-<script setup lang="js">
-const props = defineProps({
+<script setup>
+defineProps({
   title: {
     type: String,
     required: true,
@@ -101,4 +101,3 @@ const props = defineProps({
   </div>
 </template>
 
-<style scoped></style>
