@@ -1,7 +1,8 @@
-import { ref, onMounted, onUnmounted } from "vue";
+import { shallowRef, triggerRef, onMounted, onUnmounted } from "vue";
 
 export function useFloatingAnimation(containerRef, iconsList) {
-  const positions = ref([]);
+  const positions = shallowRef([]);
+  let rawPositions = [];
   const speed = 0.8;
   const icon_size = 80;
   const spawn_margin = 120;
@@ -40,22 +41,27 @@ export function useFloatingAnimation(containerRef, iconsList) {
     if (!containerRef.value) return;
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
-    const rect = containerRef.value.getBoundingClientRect();
-    positions.value = iconsList.map(() => spawn(rect));
+    let cachedRect = containerRef.value.getBoundingClientRect();
+    rawPositions = iconsList.map(() => spawn(cachedRect));
+    positions.value = rawPositions;
+
+    const resizeObserver = new ResizeObserver(([entry]) => {
+      const { width, height } = entry.contentRect;
+      cachedRect = { width, height };
+    });
+
+    resizeObserver.observe(containerRef.value);
 
     const animate = () => {
-      if (!containerRef.value) return;
-      const currentRect = containerRef.value.getBoundingClientRect();
-
-      positions.value.forEach((p, i) => {
+      rawPositions.forEach((p, i) => {
         p.x += p.vx;
         p.y += p.vy;
 
         const inside =
           p.x > -icon_size &&
-          p.x < currentRect.width &&
+          p.x < cachedRect.width &&
           p.y > -icon_size &&
-          p.y < currentRect.height;
+          p.y < cachedRect.height;
 
         if (inside) {
           p.opacity = Math.min(0.35, p.opacity + 0.01);
@@ -65,18 +71,19 @@ export function useFloatingAnimation(containerRef, iconsList) {
 
         if (
           p.x < -spawn_margin ||
-          p.x > currentRect.width + spawn_margin ||
+          p.x > cachedRect.width + spawn_margin ||
           p.y < -spawn_margin ||
-          p.y > currentRect.height + spawn_margin
+          p.y > cachedRect.height + spawn_margin
         ) {
-          positions.value[i] = spawn(currentRect);
+          rawPositions[i] = spawn(cachedRect);
         }
       });
 
+      triggerRef(positions);
       animationFrameId = requestAnimationFrame(animate);
     };
 
-    const observer = new IntersectionObserver(([entry]) => {
+    const intersectionObserver = new IntersectionObserver(([entry]) => {
       if (entry.isIntersecting) {
         animate();
       } else {
@@ -84,10 +91,11 @@ export function useFloatingAnimation(containerRef, iconsList) {
       }
     });
 
-    observer.observe(containerRef.value);
+    intersectionObserver.observe(containerRef.value);
 
     onUnmounted(() => {
-      observer.disconnect();
+      intersectionObserver.disconnect();
+      resizeObserver.disconnect();
       cancelAnimationFrame(animationFrameId);
     });
   });
