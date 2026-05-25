@@ -12,19 +12,11 @@ import IconMail from "../components/icons/IconMail.vue";
     <nav
       class="flex flex-row 2xl:flex-col items-center gap-10 text-2xl 2xl:pl-7"
     >
-      <a
-        :href="socialLinks.github"
-        target="_blank"
-        class="nav-social"
-      >
+      <a :href="socialLinks.github" target="_blank" class="nav-social">
         <IconGithub />
       </a>
 
-      <a
-        :href="socialLinks.linkedin"
-        target="_blank"
-        class="nav-social"
-      >
+      <a :href="socialLinks.linkedin" target="_blank" class="nav-social">
         <IconLinkedin />
       </a>
 
