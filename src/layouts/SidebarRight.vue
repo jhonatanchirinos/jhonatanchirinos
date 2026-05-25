@@ -28,4 +28,3 @@ import { navLinks } from "../data/navigation";
   </aside>
 </template>
 
-<style scoped></style>

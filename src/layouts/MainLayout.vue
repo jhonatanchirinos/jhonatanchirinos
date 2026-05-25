@@ -4,7 +4,7 @@ import SidebarRight from "./SidebarRight.vue";
 </script>
 
 <template>
-  <div class="flex flex-col 2xl:flex-row min-h-screen portfolio-bg">
+  <div class="flex flex-col 2xl:flex-row min-h-screen">
     <SidebarLeft class="order-2 2xl:order-1 2xl:w-24 shrink-0 w-full" />
 
     <main class="flex-1 order-1 2xl:order-2 min-h-[70vh] pb-16 2xl:pb-10">
@@ -17,7 +17,3 @@ import SidebarRight from "./SidebarRight.vue";
   </div>
 </template>
 
-<style scoped>
-.portfolio-bg {
-}
-</style>
