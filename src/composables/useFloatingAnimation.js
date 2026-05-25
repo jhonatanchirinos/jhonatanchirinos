@@ -38,7 +38,7 @@ export function useFloatingAnimation(containerRef, iconsList) {
 
   onMounted(() => {
     if (!containerRef.value) return;
-    
+
     const rect = containerRef.value.getBoundingClientRect();
     positions.value = iconsList.map(() => spawn(rect));
 
@@ -75,13 +75,20 @@ export function useFloatingAnimation(containerRef, iconsList) {
       animationFrameId = requestAnimationFrame(animate);
     };
 
-    animate();
-  });
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) {
+        animate();
+      } else {
+        cancelAnimationFrame(animationFrameId);
+      }
+    });
 
-  onUnmounted(() => {
-    if (animationFrameId) {
+    observer.observe(containerRef.value);
+
+    onUnmounted(() => {
+      observer.disconnect();
       cancelAnimationFrame(animationFrameId);
-    }
+    });
   });
 
   return {
