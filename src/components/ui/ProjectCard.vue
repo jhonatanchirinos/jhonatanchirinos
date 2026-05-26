@@ -1,4 +1,6 @@
 <script setup>
+import { ref, onMounted, onUnmounted } from "vue";
+
 defineProps({
   title: {
     type: String,
@@ -25,6 +27,28 @@ defineProps({
     required: true,
   },
 });
+
+const titleRef = ref(null);
+const underlineWidth = ref("100%");
+
+function updateUnderlineWidth() {
+  if (!titleRef.value) return;
+  const range = document.createRange();
+  range.selectNodeContents(titleRef.value);
+  const rects = range.getClientRects();
+  if (!rects.length) return;
+  underlineWidth.value = `${Math.ceil(Math.max(...Array.from(rects, (r) => r.width)))}px`;
+}
+
+let resizeObserver;
+
+onMounted(() => {
+  document.fonts.ready.then(updateUnderlineWidth);
+  resizeObserver = new ResizeObserver(updateUnderlineWidth);
+  if (titleRef.value) resizeObserver.observe(titleRef.value);
+});
+
+onUnmounted(() => resizeObserver?.disconnect());
 </script>
 
 <template>
@@ -45,13 +69,15 @@ defineProps({
       <div class="flex-1 min-w-0">
         <div class="inline-block max-w-full 2xl:max-w-lg">
           <h3
+            ref="titleRef"
             class="leading-none text-2xl sm:text-3xl md:text-4xl 2xl:text-5xl tracking-[0.03em] text-white transition-colors duration-400 uppercase"
           >
             {{ title }}
           </h3>
 
           <div
-            class="w-full h-1 mb-4 bg-blue-500 origin-center scale-x-100 2xl:scale-x-0 2xl:group-hover:scale-x-100 transition-transform duration-500"
+            :style="{ width: underlineWidth }"
+            class="h-1 mb-4 bg-blue-500 origin-center scale-x-100 2xl:scale-x-0 2xl:group-hover:scale-x-100 transition-transform duration-500"
           ></div>
         </div>
 
