@@ -17,6 +17,12 @@ body {
   background-size: 40px 40px;
 }
 
+.devicon-nextjs-plain,
+.devicon-express-original,
+.devicon-vercel-original {
+  color: white;
+}
+
 ::selection {
   background-color: #3b82f6;
   color: #0f172a;
