@@ -67,7 +67,7 @@ onUnmounted(() => resizeObserver?.disconnect());
       </div>
 
       <div class="flex-1 min-w-0">
-        <div class="inline-block max-w-full 2xl:max-w-lg">
+        <div class="w-fit max-w-full 2xl:max-w-lg">
           <h3
             ref="titleRef"
             class="leading-none text-2xl sm:text-3xl md:text-4xl 2xl:text-5xl tracking-[0.03em] text-white transition-colors duration-400 uppercase"
